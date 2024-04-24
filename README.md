@@ -6,5 +6,5 @@
 [HongJun控制器端](https://github.com/CGandGameEngineLearner/HongJun)
 ## 依赖环境
 1. Unreal4.27.2
-2. AirSim Unreal插件[AirSim](https://github.com/microsoft/AirSim/tree/main/Unreal/Plugins/AirSim) （可在虚幻商城下载）
+2. AirSim Unreal插件 [AirSim](https://github.com/microsoft/AirSim/tree/main/Unreal/Plugins/AirSim) （可在虚幻商城下载）
 3. SocketIO Unreal插件 （请在虚幻商城下载）
