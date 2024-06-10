@@ -30,11 +30,13 @@ void UConnectionComponent::BeginPlay()
 	if(OutActors.Num()>0)
 	{
 		MyConnectionSystem=Cast<AConnectionSystem>(OutActors[0]);
+		GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &UConnectionComponent::UpdateActorInformation, 0.05f, true);
 	}
 	else
 	{
 		UE_LOG(ConnectionSystem,Warning,TEXT("游戏场景中未放置ConnectionSystem，无法与ConnectionSystem取得连接"));
 	}
+	
 }
 
 
@@ -44,7 +46,14 @@ void UConnectionComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
-	UpdateActorInformation();
+	
+}
+
+void UConnectionComponent::BeginDestroy()
+{
+	Super::BeginDestroy();
+	AActor* Owner=GetOwner();
+	//MyConnectionSystem->UploadActorDestroyInformation(Owner);
 }
 
 void UConnectionComponent::ActorDie()

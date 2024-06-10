@@ -8,7 +8,7 @@ public class ggg : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore","SocketIOClient", "SocketIOLib", "Json", "SIOJson","JsonUtilities"});
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore","SocketIOClient", "SocketIOLib", "Json", "SIOJson","JsonUtilities" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

@@ -51,10 +51,10 @@ public:
 		float Max_Pitch=90.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Radar")
-		float Min_Yaw=-90.f;
+		float Min_Yaw=-180.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Radar")
-		float Max_Yaw=90.f;
+		float Max_Yaw=180.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Radar",meta=(Tooltip="忽略带有该标签的敌人"))
 		FName	Ignore_Tag=FName(TEXT("Dead"));

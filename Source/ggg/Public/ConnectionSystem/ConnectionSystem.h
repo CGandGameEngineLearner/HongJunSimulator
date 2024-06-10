@@ -49,5 +49,8 @@ public:
 
 	UFUNCTION(BlueprintCallable,Category="ConnectionSystem")
 	void UploadActorInformation(AActor* Actor);
+
+	UFUNCTION(BlueprintCallable,Category="ConnectionSystem")
+	void UploadActorDestroyInformation(AActor* Actor);
 	
 };

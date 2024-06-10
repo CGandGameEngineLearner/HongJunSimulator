@@ -62,8 +62,8 @@ void AConnectionSystem::UploadActorInformation(AActor* Actor)
 	FVector ActorLocation=Actor->GetActorLocation();
 	FRotator ActorRotator=Actor->GetActorRotation();
 	FVector ActorScale=Actor->GetActorScale();
-	FString DeadActorName=Actor->GetName();
-	JsonObject->SetStringField(FString(TEXT("actor_name")),DeadActorName);
+	FString ActorName=Actor->GetName();
+	JsonObject->SetStringField(FString(TEXT("actor_name")),ActorName);
 	JsonObject->SetNumberField(FString(TEXT("x")),ActorLocation.X);
 	JsonObject->SetNumberField(FString(TEXT("y")),ActorLocation.Y);
 	JsonObject->SetNumberField(FString(TEXT("z")),ActorLocation.Z);
@@ -78,9 +78,18 @@ void AConnectionSystem::UploadActorInformation(AActor* Actor)
 	{
 		TagStrings.Add(Tag.ToString());
 	}
-	JsonObject->SetStringArrayField(FString(TEXT("scale_z")),TagStrings);
+	JsonObject->SetStringArrayField(FString(TEXT("tags")),TagStrings);
 	USIOJsonValue* JsonValue= USIOJLibrary::Conv_JsonObjectToJsonValue(JsonObject);
 	this->SocketIOClientComponent->Emit(TEXT("UpdateActorInformation"),JsonValue,FString(TEXT("/")));
 	
+}
+
+void AConnectionSystem::UploadActorDestroyInformation(AActor* Actor)
+{
+	FString ActorName=Actor->GetName();
+	USIOJsonObject* JsonObject=USIOJsonObject::ConstructJsonObject(this);
+	JsonObject->SetStringField(FString(TEXT("actor_name")),ActorName);
+	USIOJsonValue* JsonValue= USIOJLibrary::Conv_JsonObjectToJsonValue(JsonObject);
+	this->SocketIOClientComponent->Emit(TEXT("UpdateActorDestroyInformation"),JsonValue,FString(TEXT("/")));
 }
 
