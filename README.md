@@ -13,3 +13,5 @@
 1. Unreal4.27.2
 2. AirSim Unreal插件 [AirSim](https://github.com/microsoft/AirSim/tree/main/Unreal/Plugins/AirSim) （可在虚幻商城下载）
 3. SocketIO Unreal插件 （请在虚幻商城下载）
+3. EasyUDP Unreal插件 （请在虚幻商城下载）
+
