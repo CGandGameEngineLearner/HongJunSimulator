@@ -8,7 +8,7 @@
 **如果您在使用此项目时遇到困难，可以提issue或编辑邮件并发送到`lifesize1@qq.com`进行咨询，如果你愿意向联合国儿童基金会捐款，或者您本人已有了任何合法的国际慈善项目的捐款证明，我将免费帮您解决问题。**
 
 ## 依赖环境
-1. Unreal4.27.2
+1. Unreal4.27.2 （在Epic下载）
 2. AirSim Unreal插件 [AirSim](https://github.com/microsoft/AirSim/tree/main/Unreal/Plugins/AirSim) （可在虚幻商城下载）
 3. [Socket.IO Client](https://github.com/getnamo/socketio-client-ue4) Unreal插件（可在虚幻商城下载）
 4. VisualStudioTools  Unreal插件 （可在虚幻商城下载） 
