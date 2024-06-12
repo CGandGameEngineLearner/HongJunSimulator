@@ -5,7 +5,7 @@
 该项目已被清华大学猛狮无人驾驶实验室和南京航空航天大学无人机实验室的研究生团队采用，并于人工智能仿真训练，并发表相关科研论文 本项目与HongJun的控制器端项目是配套使用的，控制器端项目链接：
 [HongJun控制器端](https://github.com/CGandGameEngineLearner/HongJun)
 
-**如果您在使用此项目时遇到困难，可以提issue或编辑邮件并发送到`lifesize1@qq.com`进行咨询，如果你愿意向[联合国近东救济工程处](https://donate.unrwa.org/gaza/~my-donation)捐款，或者您本人已有了任何合法的国际慈善项目的捐款证明，我将免费帮您解决问题。**
+**如果您在使用此项目时遇到困难，可以提`Issue`或编辑邮件并发送到`lifesize1@qq.com`进行咨询，如果你愿意向[联合国近东救济工程处](https://donate.unrwa.org/gaza/~my-donation)捐款，或者您本人已有了任何合法的国际慈善项目的捐款证明，我将免费帮您解决问题。**
 
 ## 依赖环境
 1. Unreal4.27.2 （在Epic下载）
