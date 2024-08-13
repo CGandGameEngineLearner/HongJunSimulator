@@ -9,8 +9,8 @@
 
 ## 依赖环境
 1. Unreal4.27.2 （在Epic下载）
-2. [AirSim](https://github.com/microsoft/AirSim/tree/main/Unreal/Plugins/AirSim)  Unreal插件（可在虚幻商城下载）
-3. [Socket.IO Client](https://github.com/getnamo/socketio-client-ue4) Unreal插件（可在虚幻商城下载）
+2. [AirSim](https://github.com/microsoft/AirSim/tree/main/Unreal/Plugins/AirSim)  Unreal插件（可在虚幻商城下载，也可以去GitHub下载，安装到项目的Plugins目录下）
+3. [Socket.IO Client](https://github.com/getnamo/socketio-client-ue4) Unreal插件（可在虚幻商城下载，也可以去GitHub下载，安装到项目的Plugins目录下）
 4. VisualStudioTools  Unreal插件 （可在虚幻商城下载） 
 
 
