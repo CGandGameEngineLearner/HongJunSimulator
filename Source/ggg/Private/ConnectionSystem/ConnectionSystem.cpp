@@ -39,16 +39,16 @@ void AConnectionSystem::ActorDieFunction(FString DeadActorName)
 	
 	UKismetSystemLibrary::PrintString(this,FString(TEXT("有无人机被摧毁")),true,true,FLinearColor(0.0, 0.66, 1.0),2.0f);
 	
-	/*auto JsonObject = USIOJConvert::MakeJsonObject();
-	JsonObject->SetStringField(FString(TEXT("dead_actor_name")),DeadActorName);
-	SocketIOClientComponent->EmitNative(TEXT("ActorDie"), JsonObject);
-	
-	/*
-	SocketIOClientComponent->EmitNative(TEXT("ActorDie"), JsonObject, [&](auto Response)
-	{
-	},FString(TEXT("/")));
-	#1#
-	UE_LOG(ConnectionSystem,Warning,TEXT("当前调用的ActorDieFunction已经被弃用，无法发送Actor被摧毁的信息"));*/
+	// /*auto JsonObject = USIOJConvert::MakeJsonObject();
+	// JsonObject->SetStringField(FString(TEXT("dead_actor_name")),DeadActorName);
+	// SocketIOClientComponent->EmitNative(TEXT("ActorDie"), JsonObject);
+	//
+	// /*
+	// SocketIOClientComponent->EmitNative(TEXT("ActorDie"), JsonObject, [&](auto Response)
+	// {
+	// },FString(TEXT("/")));
+	// #1#
+	// UE_LOG(ConnectionSystem,Warning,TEXT("当前调用的ActorDieFunction已经被弃用，无法发送Actor被摧毁的信息"));*/
 
 	USIOJsonObject* JsonObject=USIOJsonObject::ConstructJsonObject(this);
 	JsonObject->SetStringField(FString(TEXT("dead_actor_name")),DeadActorName);
